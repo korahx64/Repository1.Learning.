@@ -1,0 +1,111 @@
+
+
+Hi all, I wanted to share some of the pseudocode from the debug problems 1 and 2, as well as a count-down timer I'm working on to keep track of how many days I have left before my class.
+
+PROBLEM / SOLUTION SET 1
+
+Problem 1
+
+// This pseudocode is intended to describe
+// computing the price of an item on sale for 10% off
+start
+   input origPrice
+   discount = price * 0.25
+   finalPrice = origPrice - discnt
+   output finalPrice
+stop
+
+Solution 1
+
+// 0. This pseudocode is intended to describe the computing the price of an item on sale for 10% off. The problem is understood.
+// 1. Plan the logic.
+// 2. Write the code. It is written. The was a modification on line where the variable name was changed from price to origPrice.
+// 3. Translate the code (into an actual language) and compile.
+// 4. Test (with multiple data types)
+// 5. Put the program into production (run in a windows environment)
+// 6. Maintain (share with others, and test). 
+
+start
+   1. input origPrice
+   2. discount = origPrice * 0.25
+   3. finalPrice = origPrice - discnt
+   4. output finalPrice
+stop
+
+start
+ 1. input = 10.00
+ 2. discount = 10.00 * 0.25
+ 3. finalPrice = 10.00 - (10.00 * 0.25)
+ 3. output = 7.50
+stop
+
+PROBLEM / SOLUTION SET 2
+
+Problem 2
+
+// This pseudocode is intended to compute the number
+// of miles per gallon you get with your automobile.
+start
+   input milesTraveled
+   input gallonsOfGasUsed
+   milesPerGallon = milesTraveled + gallonsOfGas
+   output milsperGallon
+start
+
+Solution 2a
+
+// This pseudocode is intended to compute the number of miles per gallon you get with your automobile. Perhaps the problem was not fully understood. Miles per gallon, is an idication of a 
+ratio of two objects. Object 1 : Object 2 OR milesTraveld : gallonOfGasUsed OR milesTraveled / gallonOfGasUsed
+// Spotted a logic error in line 2. The original operator was milesTravled + gallonsOfGas. The orginal also had a two starting objects, which would have created a loop.
+
+start
+0. userInput 0 = milesTraveled
+1. userinput 1 = gallonsOfGasUsed
+2. milesPerGallon = milesTraveled/gallonsOfGasUsed 
+3. output milsperGallon
+stop
+
+Solution 2b
+
+start
+// User open the shell.
+0. shellprompt.userInput 0 = 2
+1. shellprompt.userInput 1 = 1
+2. shellcommand.milesPerGallonOutput 1 = 2/1
+3. shellOutput = "You vehicle is ONLY getting" + (shellcommand.milesPerGallonOutput 1) + "mile per gallon".
+stop
+// User has entered two inputs. The command in line 2 has executed. The shell has output the ratio for the vehicles miles per gallon.
+
+Day Before Class Countdown
+
+NOTE: This process needs a lot of work!
+
+0. Understand the problem. (Inefficent updates to the multiple days.before.class.countdown.clock )
+1. Plan the logic
+2. Wire the code // pseudocode
+3. Test to see if the program compiles.
+
+// This pseudocode is intended to provide a days.remaining count-down before the next class room session.
+
+START: On open of OneNote, increment once.
+1. Increment 
+// Days before class = ( Current.number.of.days - 1)
+// Start {7,6,5,4,3,2,1,0. 7,6,5, ... etc.} 
+STOP: After the days have displayed.
+// End after X number of cycles.
+
+Codex // Database?
+Mon = A = {7,6,5,4,3,2,1,0} = Day 0
+Tue = B = {7,6,5,4,3,2,1,0} = Day 1
+Wed = C = {7,6,5,4,3,2,1,0} = Day 2
+Thr = D = {7,6,5,4,3,2,1,0} = Day 3
+Fri = E = {7,6,5,4,3,2,1,0} = Day 4
+// No class
+Sat = F = {7,6,5,4,3,2,1,0} = Day 5
+// No class
+Sun = G = {7,6,5,4,3,2,1,0} = Day 6
+// No class
+
+START user.input = {Day 0}
+ control = { (7-1) , (7-2) , (7-3), (7-4), (7-5), 7(6), (7-7) }
+ output = { "Days remaining are" + 7, "Days remaining are" + 6, "Days remaining are" + 5, "Days remaining are" + 4, "Days remaining are" + 3, "Days remaining are" + 2, "Days remaining are" + 1, "Days remaining are" + 0 }                                                                                                                               STOP
